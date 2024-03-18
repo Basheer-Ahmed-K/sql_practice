@@ -1,0 +1,11 @@
+CREATE DATABASE ecommerce
+
+CREATE TABLE gold_member_users(username varchar(25), signup_date date)
+
+ALTER TABLE gold_member_users
+ADD userid int NOT NULL Primary key;
+
+INSERT INTO gold_member_users(userid, username, signup_date)
+VALUES(001, 'John', '09-22-2017')
+
+SELECT * FROM gold_member_users
